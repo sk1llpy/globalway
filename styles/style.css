@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "actay-wide";
+  src: url("../fonts/ActayWide-Bold.otf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.onest-font {
+  font-family: "Onest", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.actay-wide-font {
+  font-family: "actay-wide";
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.transition-button {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body {
+  background-color: #201B1B;
+}
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #201B1B;
+  border-radius: 0 0 20px 20px;
+  padding: 10px 32px;
+}
+body header .buttons .call-button {
+  border: 1px solid #6C6565;
+  padding: 16px 25px;
+}
+body header .buttons .course-button {
+  border: 1px solid #DC3545;
+  text-transform: uppercase;
+  padding: 16px 20px;
+}
+body main h1 {
+  text-transform: uppercase;
+}
+body main .course-button {
+  border: 2px solid #DC3545;
+  text-transform: uppercase;
+  padding: 16px 26px;
+}
+body #our-courses {
+  padding: 200px 32px;
+}
+body #our-courses .course-box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body #our-courses .course-box div i {
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+body #our-courses .course-box div p {
+  width: 280px;
+}
+body #our-courses .bg-1 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("../images/image.svg");
+  background-size: cover;
+  background-position: center;
+}
+body #our-courses .bg-2 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../images/image (1).svg");
+  background-size: cover;
+  background-position: center;
+}
+body #our-courses .bg-3 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../images/image (2).svg");
+  background-size: cover;
+  background-position: center;
+}
+body #advantages {
+  padding: 200px 32px;
+}
+body #advantages .advantage-box {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+body #reviews {
+  padding: 200px 66px;
+}
+body #reviews .content {
+  padding: 40px 0px 40px 40px;
+}
+body #reviews .content .course-button {
+  padding: 12px 16px;
+}
+body #reviews .content .reviews-bg {
+  border-radius: 20px;
+  background: url("../images/Frame 54.svg") center/cover no-repeat;
+  padding: 0;
+  width: 100%;
+  height: 506px;
+  margin-top: -39px;
+}/*# sourceMappingURL=style.css.map */

@@ -143,14 +143,76 @@ body #reviews .course-button {
   }
 }
 body #reviews__comments {
-  height: 500px;
-  width: 100vh;
+  padding: 200px 0;
+}
+body #reviews__comments .swiper-container {
+  width: 100%;
+  max-width: 900vh;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+body #reviews__comments .swiper-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+body #reviews__comments .swiper-title span {
+  color: #ff0033;
+}
+body #reviews__comments .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  gap: 24px;
+}
+body #reviews__comments .swiper-slide {
+  flex: 0 0 50%;
+  max-width: 564px;
+  width: 100%;
+  height: 310px;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px rgba(214, 212, 212, 0.2);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+body #reviews__comments .swiper-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+@media only screen and (max-width: 1024px) {
+  body #reviews__comments .swiper-slide {
+    flex: 0 0 100%;
+  }
+}
+body #reviews__comments .swiper-line-button {
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out, font-size 0.4s ease-in-out;
+}
+body #reviews__comments .swiper-line-button.active {
+  font-size: 80px;
+  color: #DC3545;
 }
 body #contact {
   padding: 64px 32px;
 }
 body #contact .map {
   margin-top: 30px;
+}
+body footer .gradient-hr {
+  border: none;
+  color: transparent;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
 }
 
 @keyframes moving {

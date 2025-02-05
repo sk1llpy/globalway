@@ -18,19 +18,18 @@
 <body>
     <!-- Start HEADER -->
     <header>
-        <div class="container mx-auto px-4 flex justify-between">
+        <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center gap-[1.875rem]">
                 <a href="#" class="onest-font lg:text-[30px] text-[26px] text-[#DC3545] font-[800]">GLOBALWAY</a>
                 <ul class="xl:flex gap-[1.25rem] hidden">
                     <li><a href="#our-courses" class="onest-font font-[300] text-[1.125rem] text-white">О курсе</a></li>
-                    <li><a href="#advantages" class="onest-font font-[300] text-[1.125rem] text-white">Преимущества</a>
-                    </li>
-                    <li><a href="#" class="onest-font font-[300] text-[1.125rem] text-white">Отзывы</a></li>
+                    <li><a href="#advantages" class="onest-font font-[300] text-[1.125rem] text-white">Преимущества</a></li>
+                    <li><a href="#reviews" class="onest-font font-[300] text-[1.125rem] text-white">Отзывы</a></li>
                     <li><a href="#" class="onest-font font-[300] text-[1.125rem] text-white">FAQ</a></li>
-                    <li><a href="#" class="onest-font font-[300] text-[1.125rem] text-white">Контакты</a></li>
+                    <li><a href="#contacts" class="onest-font font-[300] text-[1.125rem] text-white">Контакты</a></li>
                 </ul>
             </div>
-            <div class="md:flex buttons gap-[8px] items-center hidden">
+            <div class="xl:flex buttons gap-[8px] items-center hidden">
                 <a href="tel:+998974202220"
                     class="text-white call-button rounded-[12px] font-[700] text-[14px] hover:bg-[#6C6565] transition-button">
                     <i class="ph ph-phone-call"></i> +998 97 420 22 20
@@ -40,6 +39,9 @@
                     записаться на курс
                 </a>
             </div>
+            <button class="block xl:hidden text-white text-[27px] cursor-pointer" id="menu-button">
+                <i class="ph ph-list"></i>
+            </button>
         </div>
     </header>
     <!-- End HEADER -->
@@ -290,9 +292,43 @@
     </section>
 
     <section id="reviews__comments">
-        <div>
-
+        <div class="swiper-container container mx-auto px-4">
+            <h1 class="text-center actay-wide-font uppercase lg:text-[36px] text-[28px] leading-[32px] lg:leading-[40px] text-white">Что говорят наши <span class="text-[#DC3545]">выпускники?</span></h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h1 class="font-[900] text-[#DC3545] text-[80px] text-start justify-start leading-0 absolute top-[50px]">"</h1>
+                    <p class="text-black text-start left-[5%] onest-font font-[400] absolute top-[75px] text-[16px] leading-[20px] max-w-[90%]">"Я никогда не думал, что смогу так быстро освоить основы логистики. Удобный формат обучения, практические задания и поддержка наставников сделали процесс простым и увлекательным. Рекомендую всем, кто хочет развиваться в этой сфере!"</p>
+                    <h1 class="font-[900] text-[#DC3545] text-[80px] text-end leading-0 absolute top-[220px] right-[20px]">"</h1>
+                    <hr class="absolute top-[240px] text-[#D6D4D4] w-[93%]">
+                    <span class="actay-wide-font absolute text-start top-[250px] text-[#DC3545] font-[500] left-[6%]">Дмитрий Иванов</span>
+                </div>
+                <div class="swiper-slide active">
+                    <h1 class="font-[900] text-[#DC3545] text-[80px] text-start justify-start leading-0 absolute top-[50px]">"</h1>
+                    <p class="text-black text-start left-[5%] onest-font font-[400] absolute top-[75px] text-[16px] leading-[20px] max-w-[90%]">"Я никогда не думал, что смогу так быстро освоить основы логистики. Удобный формат обучения, практические задания и поддержка наставников сделали процесс простым и увлекательным. Рекомендую всем, кто хочет развиваться в этой сфере!"</p>
+                    <h1 class="font-[900] text-[#DC3545] text-[80px] text-end leading-0 absolute top-[220px] right-[20px]">"</h1>
+                    <hr class="absolute top-[240px] text-[#D6D4D4] w-[93%]">
+                    <span class="actay-wide-font absolute text-start top-[250px] text-[#DC3545] font-[500] left-[6%]">Дмитрий Иванов</span>
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="font-[900] text-[#DC3545] text-[80px] text-start justify-start leading-0 absolute top-[50px]">"</h1>
+                    <p class="text-black text-start left-[5%] onest-font font-[400] absolute top-[75px] text-[16px] leading-[20px] max-w-[90%]">"Я никогда не думал, что смогу так быстро освоить основы логистики. Удобный формат обучения, практические задания и поддержка наставников сделали процесс простым и увлекательным. Рекомендую всем, кто хочет развиваться в этой сфере!"</p>
+                    <h1 class="font-[900] text-[#DC3545] text-[80px] text-end leading-0 absolute top-[220px] right-[20px]">"</h1>
+                    <hr class="absolute top-[240px] text-[#D6D4D4] w-[93%]">
+                    <span class="actay-wide-font absolute text-start top-[250px] text-[#DC3545] font-[500] left-[6%]">Дмитрий Иванов</span>
+                </div>
+            </div>
+            <div class="swiper-buttons absolute top-[50%] flex justify-between left-[1%] w-[98%]">
+                <button id="prevButton" class="opacity-[0.9] p-[10px] text-center text-white font-[700] text-[22px] bg-[#DC3545] rounded-[50%] cursor-pointer w-[55px] h-[55px]">
+                    <i class="ph ph-caret-left"></i>
+                </button>
+                <button id="nextButton" class="opacity-[0.9] p-[10px] text-center text-white font-[700] text-[22px] bg-[#DC3545] rounded-[50%] cursor-pointer w-[55px] h-[55px]">
+                    <i class="ph ph-caret-right"></i>
+                </button>
+            </div>
         </div>
+        <div class="relative">
+            <div class="absolute swiper-lines flex justify-center items-center mt-[0] lg:mt-[-20px] w-full gap-[-10px]"></div>
+        </div>        
     </section>
     <!-- End REVIEWS (SECTION) -->
 
@@ -324,8 +360,8 @@
             </div>
         </div>
 
-        <form method="post">
-            <div class="container flex justify-center items-center p-[32px] rounded-[20px] bg-[#EAEAEA] mt-[20px]">
+        <div class="container flex justify-center items-center p-[32px] rounded-[20px] bg-[#EAEAEA] mt-[20px]">
+            <form method="post">
                 <div>
                     <h1 class="text-center uppercase text-[#201B1B] actay-wide-font lg:text-[36px] text-[28px] leading-[32px] lg:leading-[40px]">Готовы <span class="text-[#DC3545]">начать?</span></h1>
                     <p class="text-[#201B1B] onest-font text-[18px] text-center leading-[19px] lg:leading-[22px] mt-[10px]">Заполните форму, и мы свяжемся с вами в течение 24 часов</p>
@@ -344,17 +380,50 @@
                         Записаться на курс
                     </button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </section>
     <!-- End CONTACT (SECTION) -->
 
     <!-- Start FOOTER -->
     <footer>
-        <div class="container px-[100px] py-[32px]">
+        <div class="container lg:px-[100px] px-[16px] py-[32px] w-[100%]">
             <div class="flex justify-between items-center">
-                <a href="#" class="onest-font text-[1.875rem] text-[#DC3545] font-[800]">GLOBALWAY</a>
+                <a href="#" class="onest-font lg:text-[30px] text-[26px] text-[#DC3545] font-[800]">GLOBALWAY</a>
             </div>
+            <hr class="my-[20px] gradient-hr w-[100%]">
+            <div class="grid lg:grid-cols-[35%_35%_30%] md:grid-cols-[50%_50%] grid-cols-1 py-[32px]">
+                <ul>
+                    <li class="text-[#F4F4F4] actay-wide-font font-[700] text-[20px] leading-[25px]">Контакты</li>
+                    <li class="text-[#D6D4D4] onest-font text-[16px] leading-[20px] mt-[20px] flex items-center gap-[9px]">
+                        <i class="ph ph-phone-call text-[19px]"></i> <span>+998 97 420 22 20</span>
+                    </li>
+                    <li class="text-[#D6D4D4] onest-font text-[16px] leading-[20px] mt-[16px] flex items-center gap-[9px]">
+                        <i class="ph ph-envelope-simple text-[19px]"></i> <span>info@logistics-course.com</span>
+                    </li>
+                    <li class="text-[#D6D4D4] onest-font text-[16px] leading-[20px] mt-[16px] flex items-center gap-[9px]">
+                        <i class="ph ph-map-pin-line text-[19px]"></i> <span>г. Ташкент, ул. Амир Темура, д. 35, офис 12</span>
+                    </li>
+                    <li class="text-[#D6D4D4] onest-font text-[16px] leading-[20px] mt-[16px] flex items-center gap-[9px]">
+                        <i class="ph ph-clock text-[19px]"></i> <span>Пн–Пт, с 9:00 до 18:00</span>
+                    </li>
+                </ul>
+                <ul class="mt-[45px] md:mt-0">
+                    <li class="text-[#F4F4F4] actay-wide-font font-[700] text-[20px] leading-[25px]">Навигация</li>
+                    <li class="mt-[20px]"><a href="#our-courses" class="text-[#D6D4D4] onest-font text-[16px] leading-[20px]">О курсе</a></li>
+                    <li class="mt-[16px]"><a href="#advantages" class="text-[#D6D4D4] onest-font text-[16px] leading-[20px]">Преимущества</a></li>
+                    <li class="mt-[16px]"><a href="#reviews" class="text-[#D6D4D4] onest-font text-[16px] leading-[20px]">Отзывы</a></li>
+                    <li class="mt-[16px]"><a href="#" class="text-[#D6D4D4] onest-font text-[16px] leading-[20px]">FAQ</a></li>
+                    <li class="mt-[16px]"><a href="#contacts" class="text-[#D6D4D4] onest-font text-[16px] leading-[20px]">Контакты</a></li>
+                </ul>
+                <ul class="mt-[45px] lg:mt-0">
+                    <li class="text-[#F4F4F4] actay-wide-font font-[700] text-[20px] leading-[25px]">Политика и условия</li>
+                    <li class="text-[#D6D4D4] onest-font text-[16px] leading-[20px] mt-[20px]">Политика конфиденциальности</li>
+                    <li class="text-[#D6D4D4] onest-font text-[16px] leading-[20px] mt-[16px]">Пользовательское соглашение</li>
+                </ul>
+            </div>
+            <hr class="mb-[20px] mt-[50px] w-[100%] my-[20px] gradient-hr">
+            <p class="onest-font text-[16px] font-[400] leading-[20px] text-[#F4F4F4]">© 2025 Globalway. Все права защищены</p>
         </div>
     </footer>
     <!-- End FOOTER -->
@@ -363,6 +432,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
 </body>
 
